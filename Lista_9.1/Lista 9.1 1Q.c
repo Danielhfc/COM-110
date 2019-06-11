@@ -1,5 +1,4 @@
 #include<stdio.h>
-
 int main(){
 
 int mat[5][8],i,j;
