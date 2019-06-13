@@ -10,7 +10,6 @@ for(i=0;i<3;i++){
 for(i=0;i<2;i++)
     for(j=i+1;j<3;j++)
         if(strcmp(nomes[i],nomes[j])>0){
-            printf("%d\n",strcmp(nomes[i],nomes[j]));
             strcpy(copia,nomes[i]);
             strcpy(nomes[i],nomes[j]);
             strcpy(nomes[j],copia);
