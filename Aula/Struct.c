@@ -6,8 +6,8 @@ float valor;
 char nome[101];
 }tproduto;
 
-void teste(tproduto p, float tx){
-    p.valor=p.valor+tx;
+void teste(tproduto *p, float tx){
+    p->valor = p->valor+tx;
 }
 
 int main(){
@@ -16,6 +16,6 @@ p.cod = 10;
 p.valor = 100;
 strcpy(p.nome,"Produto10");
 printf("\n%d,%f,%s",p.cod,p.valor,p.nome);
-teste(p,10);
+teste(&p,10);
 printf("\n%d,%f,%s",p.cod,p.valor,p.nome);
 }
