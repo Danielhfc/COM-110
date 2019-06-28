@@ -1,7 +1,7 @@
 #include<stdio.h>
 int i,n,codigo[100],idade[100];
 float sal[100];
-void informacao(int codigo[100],int idade[100],float sal[100]){
+void informacao(int codigo[],int idade[],float sal[]){
 for(i=0;i<100;i++){
     printf("Qual o codigo do funcionario? ");
         scanf("%d",&codigo[i]);
@@ -16,7 +16,7 @@ n++;
 }
 }
 
-void velho(int codigo[100],int idade[100]){
+void velho(int codigo[],int idade[]){
 int maisvelho = idade[0],codigovelho;
 
 for(i=0;i<n;i++)
@@ -25,7 +25,7 @@ for(i=0;i<n;i++)
 printf("O codigo do funcionario mais velho e: %d\n",codigo[codigovelho]);
 }
 
-void ricos(int codigo[100],int idade[100],float sal[100]){
+void ricos(int codigo[],int idade[],float sal[]){
 float media=0, quantidade = n;
 for(i=0;i<n;i++)
     media = media+sal[i];

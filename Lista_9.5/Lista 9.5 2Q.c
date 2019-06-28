@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<string.h>
-int contemnome(char nome[51],char matriz[5][51]){
+int contemnome(char nome[51],char matriz[][51]){
 int i;
 for(i=0;i<5;i++)
 if(strcmp(nome,matriz[i])==0)

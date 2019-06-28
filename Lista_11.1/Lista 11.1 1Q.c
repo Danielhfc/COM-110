@@ -14,7 +14,7 @@ for(i=0;i<n;i++){
     printf("Digite a sua idade: ");
     scanf(" %d",&p[i].idade);
     printf("Digite a sua cidade: ");
-    scanf(" %[^\n]",&p[i].proced);
+    scanf(" %[^\n]",p[i].proced);
 }
 }
 //Letra d

@@ -1,6 +1,6 @@
 #include<stdio.h>
 int i;
-void zero(int a[5]){
+void zero(int a[]){
 for(i=0;i<5;i++)
     if(a[i]<0)
         a[i]=0;
@@ -16,7 +16,7 @@ for(i=0;i<5;i++){
         scanf("%d",&a[i]);
         }
 
-vetor(a);
+zero(a);
 for(i=0;i<5;i++)
     printf("%d\n",a[i]);
 

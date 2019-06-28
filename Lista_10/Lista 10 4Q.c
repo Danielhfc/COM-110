@@ -5,7 +5,7 @@ int cod;
 float preco;
 }produto;
 
-float retornoPreco(produto *p,int codigo){
+float retornoPreco(produto p[100],int codigo){
 int i;
 for(i=0;i<100;i++)
     if(codigo==p[i].cod)
@@ -38,10 +38,10 @@ printf("Qual o codigo do produto a ser procurado? ");
 scanf("%d",&codigo);
 retornoPreco(p,codigo);
 //Letra B
-printf("Qual a porcentagem do aumento? ");
-scanf("%f",&porcent);
-porcent=porcent/100;
-ajuste(p,porcent);
+//printf("Qual a porcentagem do aumento? ");
+//scanf("%f",&porcent);
+//porcent=porcent/100;
+//ajuste(p,porcent);
 //Letra C
-imprime(p);
+//imprime(p);
 }
