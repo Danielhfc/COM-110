@@ -12,7 +12,7 @@ for(i=0;i<25;i++){
 }
 
 for(i=0;i<25;i++)
-    if(vetorA[0]==vetorB[i])
+    if(vetorA[0]==vetorB[i] && i<21)
     if(vetorA[1]==vetorB[i+1])
     if(vetorA[2]==vetorB[i+2])
     if(vetorA[3]==vetorB[i+3])

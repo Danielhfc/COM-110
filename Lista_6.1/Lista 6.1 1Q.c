@@ -9,7 +9,7 @@ int main(){
     scanf("%d", &num1);
 
     if(num1%2==0) printf("%d e par",num1);
-    else printf("%d e impar", num1N);
+    else printf("%d e impar", num1);
 
 
 }
